@@ -7,7 +7,7 @@ exports.Insert = (req, res, next) => {
     const nome = req.body.nome;
     const descricao = req.body.descricao;
     const preco = req.body.preco;
-    const QtdemEstoque = req.body.QtdemEstoque;
+    const qtdemEstoque = req.body.qtdemEstoque;
     const ativo = req.body.ativo;
  
     // Popula cada um dos campos do model com os campos recebido na request
@@ -15,7 +15,7 @@ exports.Insert = (req, res, next) => {
         nome: nome,
         descricao: descricao,
         preco: preco,
-        QtdemEstoque: QtdemEstoque,
+        qtdemEstoque: qtdemEstoque,
         ativo: ativo,
     })
         //then = registra o que queremos que aconteca quando a Promise for resolvida

@@ -33,7 +33,7 @@ const Produto = sequelize.define("produto", {
             len: [1, 999999]
         }
     },
-    QtdemEstoque: {
+    qtdemEstoque: {
         allowNull: false,
         type: Sequelize.DOUBLE(),
         validate: {
