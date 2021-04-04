@@ -21,9 +21,9 @@ const Produto = sequelize.define("produto", {
     },
     descricao: {
         allowNull: false,
-        type: Sequelize.STRING(200),
+        type: Sequelize.STRING(100),
         validate: {
-            len: [3, 200]
+            len: [3, 100]
         }
     },
     preco: {
