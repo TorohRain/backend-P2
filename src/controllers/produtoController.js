@@ -5,15 +5,17 @@ const status = require('http-status');
 // Cria o método Insert, obtendo os dados da request
 exports.Insert = (req, res, next) => {
     const nome = req.body.nome;
+    const descricao = req.body.descricao;
     const preco = req.body.preco;
-    const dataVencimento = req.body.dataVencimento;
+    const QtdemEstoque = req.body.QtdemEstoque;
     const ativo = req.body.ativo;
  
     // Popula cada um dos campos do model com os campos recebido na request
     Produto.create({
         nome: nome,
+        descricao: descricao,
         preco: preco,
-        dataVencimento: dataVencimento,
+        QtdemEstoque: QtdemEstoque,
         ativo: ativo,
     })
         //then = registra o que queremos que aconteca quando a Promise for resolvida
